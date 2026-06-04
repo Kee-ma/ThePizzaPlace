@@ -32,4 +32,8 @@ public class Pizza {
     this.topping.add(topping);
     return this;
   }
+
+  public CustomPizza Assembly() {
+    return new CustomPizza(this);
+  }
 }
