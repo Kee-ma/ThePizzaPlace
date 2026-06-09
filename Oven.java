@@ -1,4 +1,4 @@
-public class Pizza {
+public class Oven {
     private final int orderId;
     private final PizzaInfo info;
     
