@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 
-public class PizzaElements {
+public class PizzaInfo {
   private final int size;
   private final int crust;
   private final int sauce;
   private List<String> toppings;
 
-  public class PizzaElements(int size, int crust, int  sauce, List<Integer> toppings) {
+  public class PizzaInfo(int size, int crust, int  sauce, List<Integer> toppings) {
     this.size = size;
     this.crust = crust;
     this.sauce = sauce;
