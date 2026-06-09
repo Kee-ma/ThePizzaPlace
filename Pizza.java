@@ -2,9 +2,9 @@ public class Pizza {
     private final int orderId;
     private final PizzaInfo info;
     
-    private boolean inOven;
-    private boolean burned;
-    private boolean completed;
+    private boolean inOven = false;
+    private boolean burned = false;
+    private boolean completed = false;
     
     private long ovenStart;
     private static final long bakeTime = 10000;
@@ -13,16 +13,8 @@ public class Pizza {
         this.orderId = orderId;
         this.info = info;
     }
-    
-    public PizzaInfo getInfo() {
-        return info;
-    }
-    
-    public void putInOven() {
-        inOven = true;
-        ovenStart = System.currentTimeMillis();
-    }
-    
+
+    @Override
     public void updateOven() {
         if (inOven && !burned) {
             if (System.currentTimeMillis() > ovenStart + bakeTime) {
@@ -30,7 +22,19 @@ public class Pizza {
             }
         }
     }
+    public void putInOven() {
+        inOven = true;
+        ovenStart = System.currentTimeMillis();
+    }
     public boolean isBurned() {
         return burned;
+    }
+
+    public PizzaInfo getInfo() {
+        return info;
+    }
+
+    public int getOrderId() {
+        return orderId;
     }
 }
