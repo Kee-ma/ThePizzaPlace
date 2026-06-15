@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class PizzaInfo {
-  private final int size;
-  private final int crust;
-  private final int sauce;
-  private List<String> toppings;
+  private int size;
+  private int crust;
+  private int sauce;
+  private List<Integer> toppings;
 
   public class PizzaInfo(int size, int crust, int  sauce, List<Integer> toppings) {
     this.size = size;
@@ -25,5 +25,16 @@ public class PizzaInfo {
   
   public List<Integer> getToppings() {
     return new ArrayList<>(toppings);
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (!(obj instanceof PizzaInfo)obj;
+    return PizzaMatcher.matches(this, other);
+    }
+  @Override 
+    public String toString() {
+
+    return "Size: " + size + ", Crust: " + crust + ", Sauce: " + sauce + ", Toppings: " + toppings;
   }
 }
