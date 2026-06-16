@@ -29,7 +29,7 @@ public class IngredientTruck {
         if (!present && now >= nextSpawnTime) {
 
             present = true;
-            leaveTime = now + 100000; // the time it stays for = 10s
+            leaveTime = now + 10000; // the time it stays for = 10s
 
             System.out.println(BLUE + "\nTruck has arrived!" + RESET);
         }
