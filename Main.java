@@ -2,8 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        GameManager game =
-                new GameManager();
+        GameManager game = new GameManager();
         game.start();
     }
 }
