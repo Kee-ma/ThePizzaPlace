@@ -58,7 +58,6 @@ public class Pizza extends GameObject {
         return info;
     }
 
-    //Ai fix
     @Override
     public void update() {
     }
