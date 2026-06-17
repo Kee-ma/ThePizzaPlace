@@ -25,6 +25,7 @@ public class PizzaMatcher {
 
     //Code segment: Note: This was coded by me, however I used ai and the internet on how 
     //to use .get() and .set(). I looked at examples but didn't copy them.
+    
     //Insertion sort so that ingredient order in our pizza and the customer's pizza match
     //when we are comparing them
     private static void sort(List<Integer> list) {
