@@ -20,10 +20,9 @@ public class IngredientTruck {
         scheduleNext();
     }
 
-    //Code segment: A time based system. 
     public void update() {
 
-        //now and.currentTimeMillis() logic suggested by ai, coded by me
+        //now and.currentTimeMillis() logic suggested by ai, implemented by me
         long now = System.currentTimeMillis();
 
         // spawn truck
