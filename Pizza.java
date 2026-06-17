@@ -12,6 +12,7 @@ public class Pizza extends GameObject {
         this.info = info;
     }
 
+    //Code segment: OOP where each pizza object stores its own oven start time.
     public void putInOven() {
         if (!inOven && !removed) {
             inOven = true;
